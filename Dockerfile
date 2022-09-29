@@ -24,7 +24,7 @@ RUN set -exu \
 RUN set -exu \
   && mkdir -p /home/pokyuser
 
-COPY ./interactive/home/pokyuser/.* /home/pokyuser/
+COPY ./pokyuser/.* /home/pokyuser/
 
 RUN set -exu \
   && chown -R 1000:1000 /home/pokyuser
