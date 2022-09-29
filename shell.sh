@@ -47,7 +47,7 @@ run () {
   docker run --rm -it \
     --volume "$POKYUSER_HOME:/home/pokyuser:rw" \
     --volume "$YOCTO_DIR:/opt/yocto:rw" \
-    ghcr.io/g-o-o-s/openwrt-autobuild:latest-dev "$@"
+    ghcr.io/yocto-wrt/poky-extended:main "$@"
 }
 
 run bash -c "cd /opt/yocto; exec $ARGS"
